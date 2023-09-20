@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Function to fetch data from the database
 def get_data_from_database():
-    con = pymysql.connect(host="34.170.18.228", user="root", password="karthik", database= "physioUsers")
+    con = pymysql.connect(host="_", user="_", password="_", database= "_")
     cursor = con.cursor()
     
     # Execute an SQL query to fetch data (replace with your query)
