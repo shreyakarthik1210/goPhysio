@@ -3,7 +3,7 @@ import pymysql
 
 app = Flask(__name__)
 
-con = pymysql.connect(host="34.170.18.228", user="root", password="karthik", database= "physioUsers");
+con = pymysql.connect(host="_", user="_", password="_", database= "_");
 
 try:
     cur= con.cursor()
