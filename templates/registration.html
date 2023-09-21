@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Registration</title>
+</head>
+<body>
+    <nav>
+        <h2>Go Physio</h2>
+    </nav> <br><br>
+    <center>
+        <div>
+            <h3>Patient Registration</h3><br>
+            <p>Please fill out the required fields to create an account.</p><br><br>
+        </div>
+        <form action="/register" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender"><br><br>
+
+            <label for="birth">Date of Birth:</label>
+            <input type="date" id="birth" name="birth" required><br><br>
+
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "patientPortal.html" %}
+
+{% block content %}
+    <h1>Input Symptoms</h1>
+    <form action="/submit_symptoms" method="POST">
+        <!-- Add your symptom input fields here -->
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

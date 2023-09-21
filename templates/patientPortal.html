@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <style>
+        table, td, th {  
+          border: 1px solid #ddd;
+          text-align: left;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          padding: 15px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        {% if msg is defined and msg %}
+        <label>{{msg}}</label>
+        {% endif %}
+        
+    </header>
+    <label>Current Recommendation :</label>  <label><b> Arm Stretches</b></label>
+    <br/>
+    <table>
+        <tr>
+            <th>Sno</th>
+            <th>Symptoms</th>
+            <th>Date</th>
+            <th>Recommendation</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shoulder pain</td>
+            <td>07/12/22</td>
+            <th>Arm stretches</th>
+            <td>Better after a week</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Leg pain</td>
+            <td>07/12/23</td>
+            <td>Walking backwards</td>
+            <td>Good</td>
+        </tr>
+    </table>
+    <br/>
+    <label for="symp">Add Symptom:</label>
+            <input type="text" id="sym" name="sym" ><br><br>
+            
+            <input type="submit" value="Submit">
+
+</body>
+</html>
